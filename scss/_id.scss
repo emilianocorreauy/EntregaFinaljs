@@ -1,0 +1,364 @@
+#productGames
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    
+    .productGames__game
+    {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 580px;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        border: 2px solid #098f41;
+        background-color: #2e2e3a;
+        transition: background-color 0.2s;
+
+        img
+        {
+            border: 3px solid #098f41;
+        }
+    }
+
+    .productGames__game:hover
+    {
+        background-color: #3d3d46;
+    }
+
+    .productGames__cart
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0rem;
+
+        h3
+        {
+            text-align: center;
+            color: #bbb8b2;
+            font-size: 1.5rem;
+            padding: 1rem;
+
+            span
+            {
+                font-size: 2rem;
+                color: #098f41;
+            }
+        }
+
+        button
+        {
+            background-color: #2e2e3a;
+            border: 3px solid #098f41;
+            padding: 0.5rem;
+            width: 240px;
+            height: 96px;
+            transition: border 0.2s, color 0.2s, background-color 0.2s;
+
+            img
+            {
+                border: none;
+            }
+        }
+
+        button:hover
+        {
+            background-color: #098f41;
+            border: 3px solid #098f41;
+            color: #2e2e3a;
+            cursor: pointer;
+        }
+
+        button:active
+        {
+            background-color: #2e2e3a;
+            border: 3px solid white;
+            color: #2e2e3a;
+        }
+    }
+}
+
+#notifications
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    height: 449px;
+    right: 1vh;
+    bottom: 1vh;
+    overflow: hidden;
+    z-index: 4;
+
+    span
+    {
+        color: $color-7;
+        font-weight: bold;
+    }
+}
+
+#addBalance
+{
+    .modalBackground
+    {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+#modalAlert
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 250px;
+    position: fixed;
+    z-index: 3;
+    background-color: #2e2e3a;
+    border: 2px solid #098f41;
+    box-shadow: 0px 1px 5px 1px black;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    .modalAlert__buttons
+    {
+        display: flex;
+        flex-direction: row;
+
+        button
+        {
+            background-color: #2e2e3a;
+            border: 2px solid #098f41;
+            padding: 0.6rem;
+            color: #098f41;
+            font-size: 1.2rem;
+            margin: 0rem 1rem;
+            transition: border 0.2s, color 0.2s, background-color 0.2s;
+        }
+
+        button:hover
+        {
+            background-color: #098f41;
+            border: 2px solid #098f41;
+            color: #2e2e3a;
+            cursor: pointer;
+        }
+
+        button:active
+        {
+            background-color: white;
+            border: 2px solid white;
+            color: #2e2e3a;
+        }
+    }
+
+    h2
+    {
+        padding-bottom: 1rem;
+        text-align: center;
+        color: $color-3;
+        font-family: $fontMain;
+    }
+    
+    input
+    {
+        background-color: $color-7;
+        border: 2px solid $color-3;
+        color: $color-3;
+        width: 50%;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        outline: none;
+        font-family: $fontMain;
+    }
+
+    p
+    {
+        padding: 0.4rem;
+        margin: 0.5rem;
+        color: red;
+        font-size: 1.2rem;
+    }
+}
+
+#listaJuegosComprados
+{
+    h2
+    {
+        transition: color 0.1s, background-color 0.1s;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        color: $color-3;
+        font-family: $fontMain2;
+        line-height: 2;
+        cursor: pointer;
+    }
+
+    h2:hover
+    {
+        color: $color-white;
+        background-color: $color-3;
+    }
+}
+
+#findedGames
+{
+    order: 2;
+}
+
+#pokeButton
+{
+    background-color: #ffffff;
+    border: 2px solid #ef3e33;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0rem 0.5rem;
+    color: #ef3e33;
+    font-size: 1.2rem;
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#pokeButton:hover
+{
+    background-color: #ef3e33;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#pokeButton:active
+{
+    background-color: #57575a;
+    border: 2px solid #57575a;
+    color: #ffffff;
+}
+
+#buyPokeball
+{
+    .pokemodalBackground
+    {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    #pokemodalAlert
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 400px;
+        position: fixed;
+        z-index: 3;
+        background-color: #2e2e3a;
+        border: 2px solid #098f41;
+        box-shadow: 0px 1px 5px 1px black;
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        h2
+        {
+            padding: 1rem;
+            text-align: center;
+            color: $color-3;
+            font-family: $fontMain;
+            margin: 1rem 1rem 1rem 0rem;
+        }
+
+        span
+        {
+            color: white;
+            font-weight: bold;
+        }
+
+        img
+        {
+            width: 200px;
+            object-fit: cover;
+            margin: 0rem 1rem 1rem 1rem;
+        }
+        
+        .pokemodalAlert__buttons
+        {
+            display: flex;
+            flex-direction: row;
+            margin: 1rem;
+
+            button
+            {
+                background-color: #2e2e3a;
+                border: 2px solid #098f41;
+                padding: 0.6rem;
+                color: #098f41;
+                font-size: 1.2rem;
+                margin: 0rem 1rem;
+                transition: border 0.2s, color 0.2s, background-color 0.2s;
+            }
+
+            button:hover
+            {
+                background-color: #098f41;
+                border: 2px solid #098f41;
+                color: #2e2e3a;
+                cursor: pointer;
+            }
+
+            button:active
+            {
+                background-color: white;
+                border: 2px solid white;
+                color: #2e2e3a;
+            }
+        }
+    }
+}
+
+.modalBackground
+    {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+#tempMessage
+{
+    color: $color-3;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10rem auto;
+    display: none;
+}

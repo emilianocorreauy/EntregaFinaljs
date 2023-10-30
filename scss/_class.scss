@@ -1,0 +1,193 @@
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px 1px black;
+    
+    .navbar__logo
+    {
+        margin: auto 1.2rem;
+    }
+
+    .navbar__productFinder
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $color-7;
+        height: max-content;
+        margin: auto 0rem;
+
+        input
+        {
+            background-color: $color-7;
+            padding: 0.5rem 0.5rem 0.5rem 1rem ;
+            border: none;
+            width: 690px;
+            height: max-content;
+            color: $color-3;
+            font-size: 1.2rem;
+            font-weight: bold;
+            outline: none;
+        }
+
+        img
+        {
+            margin: 0.8rem 0rem 0.8rem 0.8rem;
+        }
+
+        button:hover
+        {
+            background-color: $color-3;
+        }
+
+        button:active
+        {
+            background-color: $color-0;
+        }
+    }
+    
+    .navbar__wallet
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 1rem 2rem 1rem 0rem;
+        
+        .navbar__wallet--balance
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p
+            {
+                color: #098f41;
+                font-size: 1.5rem;
+                font-family: AudioWide, sans-serif;
+                margin: 0rem 0.5rem 0rem 0rem;
+            }
+
+            span
+            {
+                color: #098f41;
+                font-size: 1.5rem;
+                font-family: AudioWide, sans-serif;
+                
+            }
+
+            img
+            {
+                width: 22px;
+                height: 22px;
+                object-fit: cover;
+                margin: 0.3rem 0.5rem;
+            }
+
+            button
+            {
+                transition: border 0.2s, color 0.2s, background-color 0.2s;
+                background-color: #ffffff;
+                border: 2px solid #098f41;
+                padding: 0.6rem;
+                color: #098f41;
+                font-size: 1.2rem;
+                margin: 0rem 0.2rem 0rem 0.2rem;
+            }
+
+            button:hover
+            {
+                background-color: #098f41;
+                border: 2px solid #098f41;
+                color: #ffffff;
+                cursor: pointer;
+            }
+
+            button:active
+            {
+                background-color: white;
+                border: 2px solid white;
+                color: #ffffff;
+            }
+        }
+        .navbar__wallet--button
+        {
+            margin: 0.7rem 0rem 0rem 0rem;
+
+            button
+            {
+                background-color: #ffffff;
+                border: 2px solid #098f41;
+                padding: 0.6rem;
+                color: #098f41;
+                font-size: 1.2rem;
+                transition: border 0.2s, color 0.2s, background-color 0.2s;
+
+                img
+                {
+                    width: 22px;
+                    height: 22px;
+                    transform: translate(0px, 3px);
+                    margin: 0rem 0rem 0rem 0.3rem;
+                    object-fit: cover;
+                }
+            }
+
+            button:hover
+            {
+                background-color: #098f41;
+                border: 2px solid #098f41;
+                color: #ffffff;
+                cursor: pointer;
+            }
+
+            button:active
+            {
+                background-color: white;
+                border: 2px solid white;
+                color: #ffffff;
+            }
+        }
+    }
+    
+}
+
+.gameList
+{
+    display: none;
+    background-color: #212121;
+    box-shadow: 3px 4px 10px black;
+    width: 360px;
+    height: 200vh;
+    left: 0;
+    position: fixed;
+    z-index: 1;    
+
+    h3
+    {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        color: #098f41;
+        font-family: $fontMain2;
+        line-height: 2;
+        background-color: black;
+    }
+}
+
+.generateNotification
+{
+
+    margin: 0.3rem auto 0.3rem auto;
+    padding: 1rem 1rem;
+    width: 300px;
+    height: max-content;
+    background-color: $color-3;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-family: $fontMain2;
+}
+

@@ -1,0 +1,627 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 3rem;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  background-color: #1f1f27;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2e2e3a;
+  -webkit-box-shadow: 0px 1px 5px 1px black;
+          box-shadow: 0px 1px 5px 1px black;
+}
+
+.navbar .navbar__logo {
+  margin: auto 1.2rem;
+}
+
+.navbar .navbar__gameFinder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1f1f27;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto 0rem;
+}
+
+.navbar .navbar__gameFinder input {
+  background-color: #1f1f27;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border: none;
+  width: 690px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #f34213;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.navbar .navbar__gameFinder img {
+  margin: 0.8rem 0rem 0.8rem 0.8rem;
+}
+
+.navbar .navbar__gameFinder button:hover {
+  background-color: #f34213;
+}
+
+.navbar .navbar__gameFinder button:active {
+  background-color: #ff9577;
+}
+
+.navbar .navbar__wallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 1rem 2rem 1rem 0rem;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance p {
+  color: #f34213;
+  font-size: 1.5rem;
+  font-family: AudioWide, sans-serif;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance span {
+  color: #f34213;
+  font-size: 1.5rem;
+  font-family: AudioWide, sans-serif;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance img {
+  width: 22px;
+  height: 22px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.3rem 0.5rem;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance button {
+  -webkit-transition: border 0.2s, color 0.2s, background-color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  padding: 0.6rem;
+  color: #f34213;
+  font-size: 1.2rem;
+  margin: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance button:hover {
+  background-color: #f34213;
+  border: 2px solid #f34213;
+  color: #2e2e3a;
+  cursor: pointer;
+}
+
+.navbar .navbar__wallet .navbar__wallet--balance button:active {
+  background-color: white;
+  border: 2px solid white;
+  color: #2e2e3a;
+}
+
+.navbar .navbar__wallet .navbar__wallet--button {
+  margin: 0.7rem 0rem 0rem 0rem;
+}
+
+.navbar .navbar__wallet .navbar__wallet--button button {
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  padding: 0.6rem;
+  color: #f34213;
+  font-size: 1.2rem;
+  -webkit-transition: border 0.2s, color 0.2s, background-color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.navbar .navbar__wallet .navbar__wallet--button button img {
+  width: 22px;
+  height: 22px;
+  -webkit-transform: translate(0px, 3px);
+          transform: translate(0px, 3px);
+  margin: 0rem 0rem 0rem 0.3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar .navbar__wallet .navbar__wallet--button button:hover {
+  background-color: #f34213;
+  border: 2px solid #f34213;
+  color: #2e2e3a;
+  cursor: pointer;
+}
+
+.navbar .navbar__wallet .navbar__wallet--button button:active {
+  background-color: white;
+  border: 2px solid white;
+  color: #2e2e3a;
+}
+
+.gameList {
+  display: none;
+  background-color: #212121;
+  -webkit-box-shadow: 3px 4px 10px black;
+          box-shadow: 3px 4px 10px black;
+  width: 360px;
+  height: 200vh;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.gameList h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  color: #f34213;
+  font-family: Ubuntu, sans-serif;
+  line-height: 2;
+  background-color: black;
+}
+
+.generateNotification {
+  margin: 0.3rem auto 0.3rem auto;
+  padding: 1rem 1rem;
+  width: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #f34213;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-family: Ubuntu, sans-serif;
+}
+
+#productGames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+#productGames .productGames__game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  height: 580px;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  border: 2px solid #f34213;
+  background-color: #2e2e3a;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+#productGames .productGames__game img {
+  border: 3px solid #f34213;
+}
+
+#productGames .productGames__game:hover {
+  background-color: #3d3d46;
+}
+
+#productGames .productGames__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+}
+
+#productGames .productGames__cart h3 {
+  text-align: center;
+  color: #bbb8b2;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+#productGames .productGames__cart h3 span {
+  font-size: 2rem;
+  color: #f34213;
+}
+
+#productGames .productGames__cart button {
+  background-color: #2e2e3a;
+  border: 3px solid #f34213;
+  padding: 0.5rem;
+  width: 240px;
+  height: 96px;
+  -webkit-transition: border 0.2s, color 0.2s, background-color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#productGames .productGames__cart button img {
+  border: none;
+}
+
+#productGames .productGames__cart button:hover {
+  background-color: #f34213;
+  border: 3px solid #f34213;
+  color: #2e2e3a;
+  cursor: pointer;
+}
+
+#productGames .productGames__cart button:active {
+  background-color: #2e2e3a;
+  border: 3px solid white;
+  color: #2e2e3a;
+}
+
+#notifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  height: 449px;
+  right: 1vh;
+  bottom: 1vh;
+  overflow: hidden;
+  z-index: 4;
+}
+
+#notifications span {
+  color: #1f1f27;
+  font-weight: bold;
+}
+
+#addBalance .modalBackground {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modalAlert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 420px;
+  height: 250px;
+  position: fixed;
+  z-index: 3;
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  -webkit-box-shadow: 0px 1px 5px 1px black;
+          box-shadow: 0px 1px 5px 1px black;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#modalAlert .modalAlert__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#modalAlert .modalAlert__buttons button {
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  padding: 0.6rem;
+  color: #f34213;
+  font-size: 1.2rem;
+  margin: 0rem 1rem;
+  -webkit-transition: border 0.2s, color 0.2s, background-color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#modalAlert .modalAlert__buttons button:hover {
+  background-color: #f34213;
+  border: 2px solid #f34213;
+  color: #2e2e3a;
+  cursor: pointer;
+}
+
+#modalAlert .modalAlert__buttons button:active {
+  background-color: white;
+  border: 2px solid white;
+  color: #2e2e3a;
+}
+
+#modalAlert h2 {
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #f34213;
+  font-family: Roboto, sans-serif;
+}
+
+#modalAlert input {
+  background-color: #1f1f27;
+  border: 2px solid #f34213;
+  color: #f34213;
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  outline: none;
+  font-family: Roboto, sans-serif;
+}
+
+#modalAlert p {
+  padding: 0.4rem;
+  margin: 0.5rem;
+  color: red;
+  font-size: 1.2rem;
+}
+
+#listaJuegosComprados h2 {
+  -webkit-transition: color 0.1s, background-color 0.1s;
+  transition: color 0.1s, background-color 0.1s;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #f34213;
+  font-family: Ubuntu, sans-serif;
+  line-height: 2;
+  cursor: pointer;
+}
+
+#listaJuegosComprados h2:hover {
+  color: white;
+  background-color: #f34213;
+}
+
+#findedGames {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#pokeButton {
+  background-color: #ffffff;
+  border: 2px solid #ef3e33;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin: 0rem 0.5rem;
+  color: #ef3e33;
+  font-size: 1.2rem;
+  -webkit-transition: border 0.2s, color 0.2s, background-color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#pokeButton:hover {
+  background-color: #ef3e33;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#pokeButton:active {
+  background-color: #57575a;
+  border: 2px solid #57575a;
+  color: #ffffff;
+}
+
+#buyPokeball .pokemodalBackground {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#buyPokeball #pokemodalAlert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  z-index: 3;
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  -webkit-box-shadow: 0px 1px 5px 1px black;
+          box-shadow: 0px 1px 5px 1px black;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#buyPokeball #pokemodalAlert h2 {
+  padding: 1rem;
+  text-align: center;
+  color: #f34213;
+  font-family: Roboto, sans-serif;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+#buyPokeball #pokemodalAlert span {
+  color: white;
+  font-weight: bold;
+}
+
+#buyPokeball #pokemodalAlert img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+#buyPokeball #pokemodalAlert .pokemodalAlert__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem;
+}
+
+#buyPokeball #pokemodalAlert .pokemodalAlert__buttons button {
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  padding: 0.6rem;
+  color: #f34213;
+  font-size: 1.2rem;
+  margin: 0rem 1rem;
+  -webkit-transition: border 0.2s, color 0.2s, background-color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#buyPokeball #pokemodalAlert .pokemodalAlert__buttons button:hover {
+  background-color: #f34213;
+  border: 2px solid #f34213;
+  color: #2e2e3a;
+  cursor: pointer;
+}
+
+#buyPokeball #pokemodalAlert .pokemodalAlert__buttons button:active {
+  background-color: white;
+  border: 2px solid white;
+  color: #2e2e3a;
+}
+
+.modalBackground {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tempMessage {
+  color: #f34213;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10rem auto;
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

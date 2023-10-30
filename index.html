@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Gugi&family=Inconsolata:wght@500&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Mateados - Venta de artículos para el fan del mate</title>
+</head>
+
+<body>
+    <div id="addBalance"></div>
+    <div id="notifications"></div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="#"><img src="images/logo.png" alt="Mateados"></a>
+            </div>
+            <div class="navbar__productFinder">
+                <img src="images/lupa.png" alt="lupa">
+                <input type="text" placeholder="Buscar producto..." id="productoBuscado">
+            </div>
+            <div class="navbar__wallet">
+                <div class="navbar__wallet--balance">
+                    <p>Saldo:</p><span id="saldoActual"></span>
+                    <button id="agregarSaldo">Agregar saldo</button>
+                    <button id="resetearSaldo">Resetear saldo</button>
+                </div>
+                <div class="navbar__wallet--button">
+                                       <button id="mostrarproductos">Mostrar carrito</button>
+                    <button id="vaciarproductosComprados">Vaciar carrito</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="productList">
+            <h3>Carrito <span id="cantidadproductos"></span></h3>
+            <div id="listaproductosComprados"></div>
+        </div>
+        <div id="productGames"></div>
+        <h2 id="tempMessage">No hay productos que coincidan con la busqueda</h2>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
