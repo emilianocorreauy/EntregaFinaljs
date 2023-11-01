@@ -257,8 +257,6 @@ function generarAlerta(variableMessage) {
 function quitarModal() {
     $(".modalBackground").remove()
     $("#modalAlert").remove()
-    $(".pokemodalBackground").remove()
-    $("#pokemodalAlert").remove()
 }
 
 function filtrarproductos() {
